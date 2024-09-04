@@ -33,7 +33,7 @@ sudo dpkg -i --force-all gcc-3.4-base_3.4.6-6ubuntu5_i386.deb
 #echo "Downloading ASITIC .tek file from yrrapt@github repository..."
 #wget https://raw.githubusercontent.com/yrrapt/inductor-generator/main/asitic/sky130.tek
 
-
+cp asitic /usr/bin/
 #echo "asitic_sky130"
 #cp /home/$(whoami)/sky130_workspace/utilities/asitic_sky130 asitic_sky130
 #chmod +x asitic_sky130
