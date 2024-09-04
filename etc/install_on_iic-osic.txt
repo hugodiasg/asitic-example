@@ -1,0 +1,15 @@
+## Install ASITIC in the docker image https://github.com/iic-jku/IIC-OSIC-TOOLS
+
+#enter as root with:
+docker exec -u root -t -i iic-osic-tools_xvnc /bin/bash
+
+
+install.sh
+
+cp asitic /usr/bin/
+chmod +x /usr/bin/
+
+chmod +x
+
+echo "export LD_LIBRARY_PATH=/foss/tools/klayout/44a2aa9:/foss/tools/ngspice/ngspice/lib:/usr/lib/x86_64-linux-gnu/" >> /headless/.bashrc
+
