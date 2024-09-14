@@ -1,0 +1,121 @@
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/tb-impedance-lc.sch
+**.subckt tb-impedance-lc
+V1 p1 GND DC 0 AC 1
+x1 GND GND net1 lc
+Vpre net1 p1 0
+Vpost net2 p1 0
+x2 GND GND net2 lc-pex-full
+**** begin user architecture code
+
+.ac lin 100k 100Meg 40G
+.control
+destroy all
+run
+save all
+* pre layout
+let z_complex_pre = -v(p1)/i(vpre)
+let z_pre = mag(z_complex_pre)
+let x_pre = imag(z_complex_pre)
+let r_pre = real(z_complex_pre)
+
+* post layout
+let z_complex_post = -v(p1)/i(vpost)
+let z_post = mag(z_complex_post)
+let x_post = imag(z_complex_post)
+let r_post = real(z_complex_post)
+
+write tb-impedance-lc.raw
+*plot z_pre z_post
+*plot x_pre x_post
+*plot r_pre r_post
+.endc
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc.sym # of pins=3
+** sym_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc.sym
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc.sch
+.subckt lc gnd p2 p1
+*.iopin p1
+*.iopin p2
+*.iopin gnd
+x1 p1 p2 gnd l0
+XC1 p1 p2 sky130_fd_pr__cap_mim_m3_2 W=22.3 L=22.3 MF=4 m=4
+.ends
+
+
+* expanding   symbol:  /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex-full.sym #
+*+ of pins=3
+** sym_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex-full.sym
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex-full.sch
+.subckt lc-pex-full gnd p2 p1
+*.iopin p1
+*.iopin p2
+*.iopin gnd
+x1 p1 p2 gnd l0
+x2 gnd p2 p1 lc-pex
+.ends
+
+
+* expanding   symbol:  /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym # of pins=3
+** sym_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sch
+.subckt l0 p1 p2 sub
+*.iopin sub
+*.iopin p1
+*.iopin p2
+R net2 p2 2.857 m=1
+L p1 net2 1.006n m=1
+Rs1 net1 sub 27.37 m=1
+Cs1 p1 net1 33.97f m=1
+Cs2 p2 net3 36.78f m=1
+Rs2 net3 sub -9 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex.sym # of
+*+ pins=3
+** sym_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex.sym
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex.sch
+.subckt lc-pex gnd p2 p1
+*.iopin p1
+*.iopin p2
+*.iopin gnd
+**** begin user architecture code
+
+
+X0 p1.t0 p2.t3 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X1 p1.t1 p2.t2 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X2 p1.t2 p2.t1 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X3 p1.t3 p2.t0 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+R0 p1.n2 p1.n0 0.348247
+R1 p1.n1 p1.t3 0.0780897
+R2 p1 p1.n2 0.070689
+R3 p1.n0 p1.t1 0.0686501
+R4 p1.n2 p1.n1 0.0520717
+R5 p1.n0 p1.t2 0.000500104
+R6 p1.n1 p1.t0 0.000500104
+R7 p2.n0 p2.t3 0.495841
+R8 p2.n1 p2.t1 0.49576
+R9 p2 p2.n2 0.483229
+R10 p2.n2 p2.n1 0.270536
+R11 p2.n2 p2.n0 0.144491
+R12 p2.n1 p2.t2 0.000906926
+R13 p2.n0 p2.t0 0.000825541
+C0 p2 p1 0.159p
+
+
+**** end user architecture code
+.ends
+
+.GLOBAL GND
+.end

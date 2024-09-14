@@ -1,0 +1,49 @@
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/tb-impedance.sch
+**.subckt tb-impedance
+V1 net1 GND DC 0 AC 1
+V2 p1 net1 DC 0 AC 0
+x1 p1 GND GND l0
+V3 net2 GND DC 0 AC 1
+V4 p1_2 net2 DC 0 AC 0
+x2 p1_2 GND GND l0
+**** begin user architecture code
+
+.ac lin 100k 100Meg 40G
+.control
+destroy all
+run
+let z=v(p1)/i(v1)
+let Z_post=v(p1_2)/i(v2)
+
+plot imag(z) imag(z_post)
+plot abs(z) abs(z_post)
+.endc
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym # of pins=3
+** sym_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sch
+.subckt l0 p1 p2 sub
+*.iopin sub
+*.iopin p1
+*.iopin p2
+R net2 p2 2.857 m=1
+L p1 net2 1.006n m=1
+Rs1 net1 sub 27.37 m=1
+Cs1 p1 net1 33.97f m=1
+Cs2 p2 net3 36.78f m=1
+Rs2 net3 sub -9 m=1
+.ends
+
+.GLOBAL GND
+.end

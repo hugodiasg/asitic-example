@@ -1,0 +1,61 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_2 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_2 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_2 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_2      |Circuit 2: sky130_fd_pr__cap_mim_m3_2      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_2 and sky130_fd_pr__cap_mim_m3_2 are equivalent.
+
+Class sky130_fd_pr__cap_mim_m3_2_5YW5FM (0):  Merged 2 parallel devices.
+Class sky130_fd_pr__cap_mim_m3_2_5YW5FM (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_pr__cap_mim_m3_2_5YW5 |Circuit 2: sky130_fd_pr__cap_mim_m3_2_5YW5 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_2 (4->2)          |sky130_fd_pr__cap_mim_m3_2 (4->2)          
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_2_5YW5 |Circuit 2: sky130_fd_pr__cap_mim_m3_2_5YW5 
+-------------------------------------------|-------------------------------------------
+c2_n5278_n4660#                            |c2_n5278_n4660#                            
+c2_280_n4660#                              |c2_280_n4660#                              
+m4_n5358_n4740#                            |m4_n5358_n4740#                            
+m4_200_n4740#                              |m4_200_n4740#                              
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_2_5YW5FM and sky130_fd_pr__cap_mim_m3_2_5YW5FM are equivalent.
+
+Cell lc-lvs (0) disconnected node: gnd
+Cell lc-lvs (1) disconnected node: gnd
+Subcircuit summary:
+Circuit 1: lc-lvs                          |Circuit 2: lc-lvs                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_2_5YW5FM (1)      |sky130_fd_pr__cap_mim_m3_2_5YW5FM (1)      
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: lc-lvs                          |Circuit 2: lc-lvs                          
+-------------------------------------------|-------------------------------------------
+p1                                         |p1                                         
+p2                                         |p2                                         
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes lc-lvs and lc-lvs are equivalent.
+
+Final result: Circuits match uniquely.
+.

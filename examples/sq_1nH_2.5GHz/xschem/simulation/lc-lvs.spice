@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-lvs.sch
+.subckt lc-lvs p1 p2 gnd
+*.PININFO p1:B p2:B gnd:B
+XC1 p1 p2 sky130_fd_pr__cap_mim_m3_2 W=22.3 L=22.3 m=4
+.ends
+.end

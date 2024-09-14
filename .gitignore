@@ -1,0 +1,7 @@
+asitic-examples/examples/sq_1nH_2.5GHz/xschem/simulation/*.spice
+!asitic-examples/examples/sq_1nH_2.5GHz/xschem/simulation/lc-lvs.spice
+
+asitic-examples/examples/sq_1nH_2.5GHz/mag/*.ext
+asitic-examples/examples/sq_1nH_2.5GHz/mag/*.spice
+asitic-examples/examples/sq_1nH_2.5GHz/mag/*.sim
+asitic-examples/examples/sq_1nH_2.5GHz/mag/*.nodes

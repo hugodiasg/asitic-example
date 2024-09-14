@@ -1,0 +1,14 @@
+* NGSPICE file created from lc-lvs.ext - technology: sky130A
+
+.subckt sky130_fd_pr__cap_mim_m3_2_5YW5FM c2_n5278_n4660# m4_200_n4740# c2_280_n4660#
++ m4_n5358_n4740#
+X0 c2_280_n4660# m4_200_n4740# sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X1 c2_n5278_n4660# m4_n5358_n4740# sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X2 c2_n5278_n4660# m4_n5358_n4740# sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+X3 c2_280_n4660# m4_200_n4740# sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
+.ends
+
+.subckt lc-lvs p1 p2 gnd
+Xsky130_fd_pr__cap_mim_m3_2_5YW5FM_0 p1 p2 p1 p2 sky130_fd_pr__cap_mim_m3_2_5YW5FM
+.ends
+
