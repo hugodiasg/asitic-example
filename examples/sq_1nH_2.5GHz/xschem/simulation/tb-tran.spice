@@ -1,30 +1,20 @@
 ** sch_path: /foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/tb-tran.sch
 **.subckt tb-tran
 V1 net1 GND sin(0 1.8 2.5G)
-V2 p1 net1 0
-x1 p1 GND GND l0
-V3 net2 GND 1.8
-V4 p1_2 net2 0
-x2 p1_2 GND GND l0
+V2 v1 net1 0
+x1 v1 GND net2 l0
 **** begin user architecture code
 
 .tran 0.4p 400p
 .control
 destroy all
 run
+let i1 = -i(v2)
+plot v1 i1
 
-plot -i(v2) p1
-plot ph(p1) ph(-i(v2))
 .endc
 
-
-.param mc_mm_switch=0
-.param mc_pr_switch=0
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
-
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 **** end user architecture code
 **.ends
 

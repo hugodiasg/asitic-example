@@ -18,7 +18,8 @@ N 90 0 150 0 {
 lab=GND}
 N 10 0 90 0 {
 lab=GND}
-N -20 0 10 0 {}
+N -20 0 10 0 {
+lab=GND}
 C {devices/vsource.sym} -480 40 0 0 {name=V1 value="sin(0 1.8 2.5G)"}
 C {devices/gnd.sym} -480 70 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 340 10 0 0 {name=l2 lab=GND}
@@ -34,5 +35,5 @@ plot v1 i1
 }
 C {devices/vsource.sym} -330 0 1 0 {name=V2 value="0"}
 C {devices/gnd.sym} -60 40 0 0 {name=l5 lab=GND}
-C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym} -70 0 0 0 {name=x1}
+C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/l0.sym} -70 10 0 0 {name=x1}
 C {sky130_fd_pr/corner.sym} 390 120 0 0 {name=CORNER only_toplevel=true corner=tt}

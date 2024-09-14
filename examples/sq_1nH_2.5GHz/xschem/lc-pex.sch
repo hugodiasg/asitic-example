@@ -15,6 +15,9 @@ C {devices/iopin.sym} -230 -70 0 1 {name=p1 lab=p1}
 C {devices/iopin.sym} -140 -70 0 0 {name=p2 lab=p2}
 C {devices/iopin.sym} -180 -150 1 0 {name=p3 lab=gnd}
 C {devices/code.sym} 70 -200 0 0 {name=s1 only_toplevel=false value="
+* NGSPICE file created from lc-pex.ext - technology: sky130A
+
+*.subckt lc-pex p1 p2 gnd
 X0 p1.t0 p2.t3 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
 X1 p1.t1 p2.t2 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
 X2 p1.t2 p2.t1 sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
@@ -33,5 +36,7 @@ R10 p2.n2 p2.n1 0.270536
 R11 p2.n2 p2.n0 0.144491
 R12 p2.n1 p2.t2 0.000906926
 R13 p2.n0 p2.t0 0.000825541
-C0 p2 p1 0.159p
+C0 p1 p2 0.159p
+*.ends
+
 "}

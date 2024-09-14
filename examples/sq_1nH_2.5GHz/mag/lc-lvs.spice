@@ -10,5 +10,6 @@ X3 c2_280_n4660# m4_200_n4740# sky130_fd_pr__cap_mim_m3_2 l=22.3 w=22.3
 
 .subckt lc-lvs p1 p2 gnd
 Xsky130_fd_pr__cap_mim_m3_2_5YW5FM_0 p1 p2 p1 p2 sky130_fd_pr__cap_mim_m3_2_5YW5FM
+R0 p1 p2 sky130_fd_pr__res_generic_m5 w=12 l=1
 .ends
 

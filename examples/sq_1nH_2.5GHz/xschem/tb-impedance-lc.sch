@@ -5,6 +5,27 @@ K {}
 V {}
 S {}
 E {}
+B 2 -430 -350 370 50 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=10e-6
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=""
+color=""
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N -350 310 -350 320 { lab=p1}
 N 180 310 180 320 { lab=GND}
 N -350 310 -290 310 {
