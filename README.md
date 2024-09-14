@@ -67,7 +67,7 @@ Next, the `l0.cif` will be open on the Magic VLSI:
 ## Creating a symbol and simulating the pi equivalent of the Inductor
 
 testbench: `tb-ind.sch`
-inductor: `l0.sch and l0.sym`
+inductor: `l0.sch` and `l0.sym`
 
 ![image](https://github.com/user-attachments/assets/ecf32bb9-c94b-4958-a85f-448e0343dec9)
 
