@@ -1,6 +1,8 @@
 # asitic-example
 
-This repo contains the setup to install the [ASITIC](https://web.archive.org/web/20210411050138/http://rfic.eecs.berkeley.edu/~niknejad/asitic.html) with the [Sky130 nm PDK](https://skywater-pdk.readthedocs.io/en/main/) inductor example.
+This repo contains the setup to install the ASITIC with the [Sky130 nm PDK](https://skywater-pdk.readthedocs.io/en/main/) inductor example.
+
+At the moment, the ASITIC oficial website is offline, but in this repo, is used a version of the [site](https://web.archive.org/web/20210411050138/http://rfic.eecs.berkeley.edu/~niknejad/asitic.html) using [Docker](https://www.docker.com/)) provided by [Way Back Machine](https://web.archive.org/)
 
 # Install
 Run `install.sh`.
