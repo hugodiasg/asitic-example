@@ -74,4 +74,4 @@ Next, the `l0.cif` will be open on the Magic VLSI:
 
 ## LC Example
 
-Click [here](https://github.com/hugodiasg/asitic-example/blob/main/examples/sq_1nH_2.5GHz/README.md)
+Click [here](https://github.com/hugodiasg/asitic-example/tree/main/examples/sq_1nH_2.5GHz)
