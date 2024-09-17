@@ -8,7 +8,7 @@ At the moment, the ASITIC [oficial website](http://rfic.eecs.berkeley.edu/~nikne
 # Installation 
 ## Using a Docker Image
 
-Click [here](https://github.com/hugodiasg/asitic-example/tree/main/etc/iic-osic-tools) to install a version of the Docker Image of [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) in Windows (using VNC).
+Click [here](https://github.com/hugodiasg/asitic-example/tree/main/etc/iic-osic-tools) to install a version with the ASITIC of the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) Docker Image in Windows (using VNC).
 
 ## Or Installing manually
 Run `install.sh`.
