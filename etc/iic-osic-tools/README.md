@@ -12,12 +12,6 @@ The ASITIC is used to create inductores, transformers, extract their layout file
 # Creating the VNC container
 `.\start_vnc.bat`
 
-# Running an example
-
-[Check this repo](https://github.com/hugodiasg/asitic-example)
-
 # Installing the ASITIC manually
-
-To install the ASITIC manually, run `install.sh`.
 
 To install the ASITIC in the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS), follow the steps in `install_on_iic-osic.txt`.
