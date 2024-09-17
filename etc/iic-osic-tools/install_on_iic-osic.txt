@@ -8,13 +8,12 @@ mkdir asitic
 cd asitic
 run the `install.sh`
 
-cd ./tech/
 mkdir /foss/pdks/sky130A/libs.tech/asitic/
-cp sky130.tek /foss/pdks/sky130A/libs.tech/asitic/
+cp ./tech/sky130.tek /foss/pdks/sky130A/libs.tech/asitic/
 cd ../
 
-# chmod +x ./etc/asitic
-# cp ./etc/asitic /usr/bin/
+chmod +x asitic
+cp ./etc/asitic /usr/bin/
 
 
 echo "export LD_LIBRARY_PATH=/foss/tools/klayout/44a2aa9:/foss/tools/ngspice/ngspice/lib:/usr/lib/x86_64-linux-gnu/" >> /headless/.bashrc
