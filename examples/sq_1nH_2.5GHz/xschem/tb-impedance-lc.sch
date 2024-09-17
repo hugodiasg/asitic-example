@@ -5,52 +5,31 @@ K {}
 V {}
 S {}
 E {}
-B 2 -430 -350 370 50 {flags=graph
-y1=0
-y2=2
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=0
-x2=10e-6
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=""
-color=""
-dataset=-1
-unitx=1
-logx=0
-logy=0
-}
-N -350 310 -350 320 { lab=p1}
-N 180 310 180 320 { lab=GND}
-N -350 310 -290 310 {
+N -110 -170 -110 -160 { lab=p1}
+N 420 -170 420 -160 { lab=GND}
+N -110 -170 -50 -170 {
 lab=p1}
-N -290 310 -200 310 {
+N -50 -170 40 -170 {
 lab=p1}
-N -10 360 -10 370 { lab=GND}
-N 190 530 190 540 { lab=GND}
-N 0 580 0 590 { lab=GND}
-N -240 310 -240 530 {
+N 230 -120 230 -110 { lab=GND}
+N 430 50 430 60 { lab=GND}
+N 240 100 240 110 { lab=GND}
+N 0 -170 0 50 {
 lab=p1}
-N -240 530 -190 530 {
+N 0 50 50 50 {
 lab=p1}
-N -130 310 -120 310 {
+N 110 -170 120 -170 {
 lab=#net1}
-N -200 310 -190 310 {
+N 40 -170 50 -170 {
 lab=p1}
-N -190 530 -180 530 {
+N 50 50 60 50 {
 lab=p1}
-N -120 530 -110 530 {
+N 120 50 130 50 {
 lab=#net2}
-C {devices/vsource.sym} -350 350 0 0 {name=V1 value="DC 0 AC 1"}
-C {devices/gnd.sym} -350 380 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 180 320 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} -290 310 1 0 {name=l3 sig_type=std_logic lab=p1}
+C {devices/vsource.sym} -110 -130 0 0 {name=V1 value="DC 0 AC 1"}
+C {devices/gnd.sym} -110 -100 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 420 -160 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} -50 -170 1 0 {name=l3 sig_type=std_logic lab=p1}
 C {devices/code_shown.sym} 570 -210 0 0 {name=Simulation only_toplevel=false value=".ac lin 100k 100Meg 10G
 .control
 destroy all
@@ -75,10 +54,10 @@ write tb-impedance-lc.raw
 .endc"
 }
 C {sky130_fd_pr/corner.sym} 560 -380 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc.sym} 30 310 0 0 {name=x1}
-C {devices/gnd.sym} -10 370 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 190 540 0 0 {name=l6 lab=GND}
-C {devices/gnd.sym} 0 590 0 0 {name=l8 lab=GND}
-C {devices/vsource.sym} -160 310 1 0 {name=Vpre value="0"}
-C {devices/vsource.sym} -150 530 1 0 {name=Vpost value="0"}
-C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex-full.sym} 40 530 0 0 {name=x2}
+C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc.sym} 270 -170 0 0 {name=x1}
+C {devices/gnd.sym} 230 -110 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 430 60 0 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 240 110 0 0 {name=l8 lab=GND}
+C {devices/vsource.sym} 80 -170 1 0 {name=Vpre value="0"}
+C {devices/vsource.sym} 90 50 1 0 {name=Vpost value="0"}
+C {/foss/designs/asitic-example/examples/sq_1nH_2.5GHz/xschem/lc-pex-full.sym} 280 50 0 0 {name=x2}

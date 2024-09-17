@@ -1,0 +1,1 @@
+${TOOLS}/asitic/asitic_linux -t ${PDKPATH}/libs.tech/asitic/sky130.tek

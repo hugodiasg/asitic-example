@@ -1,0 +1,159 @@
+
+################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT/OUTPUT LOG File
+# Generated on Mon Sep 16 19:05:11 2024
+################################################
+
+ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
+Analysis & Simulation of Inductors and Transformers for ICs
+Reading technology file </foss/pdks/sky130A/libs.tech/asitic/sky130.tek>...
+Reading .asitic init file...
+ASITIC>  load l0
+
+ASITIC>  piv l0 2.5
+KCL violation at port 2 of segment 14 in device l0.KCL violation at port 2 of segment 15 in device l0.
+maxL = 3000.00, maxT =  1.54, maxW =  1.54 (lambda = 60000.00, delta =  1.92)
+Performing Analysis at 2.5 GHz
+Generating capacitance matrix (90x90).Could not open data file at frequency = 2.50.  Tried using . as path.
+Generating data at 2.50 GHz...Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            Calculating Green Function...Computing FFTs...            
+Writing data.....
+Generating inductance matrix (120x120)..Inverting matrix......
+Segment 0  , Len = 114.00, v = -0.11 + -0.0018 j
+Child 0  :	(-0.002, 0.007), 0.007 (106.204)	Ji = 0.00375
+Child 1  :	(-0.001, 0.007), 0.007 (97.377)	Ji = 0.00369
+Child 2  :	(-0.000, 0.007), 0.007 (93.563)	Ji = 0.00366
+Child 3  :	(-0.000, 0.007), 0.007 (92.828)	Ji = 0.00373
+Child 4  :	(-0.001, 0.008), 0.008 (94.745)	Ji = 0.0039
+Child 5  :	(-0.001, 0.008), 0.008 (99.501)	Ji = 0.0042
+Child 6  :	(-0.003, 0.009), 0.009 (107.895)	Ji = 0.00463
+Child 7  :	(-0.005, 0.009), 0.010 (122.214)	Ji = 0.00519
+Segment 1  , Len = 108.00, v = -0.11 + -0.0031 j
+Child 0  :	(-0.004, 0.008), 0.009 (114.738)	Ji = 0.00451
+Child 1  :	(-0.002, 0.008), 0.008 (102.558)	Ji = 0.0042
+Child 2  :	(-0.001, 0.008), 0.008 (95.953)	Ji = 0.00395
+Child 3  :	(-0.000, 0.007), 0.007 (92.915)	Ji = 0.00381
+Child 4  :	(-0.000, 0.007), 0.007 (93.006)	Ji = 0.00379
+Child 5  :	(-0.001, 0.008), 0.008 (96.409)	Ji = 0.0039
+Child 6  :	(-0.002, 0.008), 0.008 (103.909)	Ji = 0.00413
+Child 7  :	(-0.004, 0.008), 0.009 (117.773)	Ji = 0.00448
+Segment 2  , Len = 108.00, v = -0.084 + 0.0017 j
+Child 0  :	(-0.003, 0.008), 0.009 (113.552)	Ji = 0.00448
+Child 1  :	(-0.002, 0.008), 0.008 (101.806)	Ji = 0.00418
+Child 2  :	(-0.001, 0.008), 0.008 (95.584)	Ji = 0.00394
+Child 3  :	(-0.000, 0.007), 0.007 (92.886)	Ji = 0.00381
+Child 4  :	(-0.000, 0.007), 0.007 (93.266)	Ji = 0.00381
+Child 5  :	(-0.001, 0.008), 0.008 (96.904)	Ji = 0.00393
+Child 6  :	(-0.002, 0.008), 0.008 (104.578)	Ji = 0.00418
+Child 7  :	(-0.004, 0.008), 0.009 (118.556)	Ji = 0.00454
+Segment 3  , Len = 94.00, v = -0.06 + 0.0048 j
+Child 0  :	(-0.004, 0.008), 0.009 (114.463)	Ji = 0.00464
+Child 1  :	(-0.002, 0.008), 0.008 (102.339)	Ji = 0.00428
+Child 2  :	(-0.001, 0.008), 0.008 (95.806)	Ji =  0.004
+Child 3  :	(-0.000, 0.007), 0.007 (92.849)	Ji = 0.00384
+Child 4  :	(-0.000, 0.007), 0.007 (93.019)	Ji = 0.0038
+Child 5  :	(-0.001, 0.008), 0.008 (96.493)	Ji = 0.00388
+Child 6  :	(-0.002, 0.008), 0.008 (104.052)	Ji = 0.0041
+Child 7  :	(-0.004, 0.008), 0.009 (117.965)	Ji = 0.00443
+Segment 4  , Len = 94.00, v =  -0.1 + -0.0014 j
+Child 0  :	(-0.008, 0.010), 0.013 (130.303)	Ji = 0.00656
+Child 1  :	(-0.005, 0.010), 0.011 (115.068)	Ji = 0.00561
+Child 2  :	(-0.002, 0.009), 0.009 (104.927)	Ji = 0.00479
+Child 3  :	(-0.001, 0.008), 0.008 (97.249)	Ji = 0.00412
+Child 4  :	(-0.000, 0.007), 0.007 (90.887)	Ji = 0.00362
+Child 5  :	(0.001, 0.006), 0.006 (85.322)	Ji = 0.00327
+Child 6  :	(0.001, 0.006), 0.006 (80.886)	Ji = 0.0031
+Child 7  :	(0.001, 0.006), 0.006 (79.866)	Ji = 0.00311
+Segment 5  , Len = 80.00, v = -0.097 + -0.0035 j
+Child 0  :	(-0.010, 0.010), 0.014 (132.979)	Ji = 0.00717
+Child 1  :	(-0.005, 0.010), 0.012 (117.134)	Ji = 0.00598
+Child 2  :	(-0.003, 0.009), 0.010 (106.233)	Ji = 0.00497
+Child 3  :	(-0.001, 0.008), 0.008 (97.485)	Ji = 0.00416
+Child 4  :	(0.000, 0.007), 0.007 (89.466)	Ji = 0.00354
+Child 5  :	(0.001, 0.006), 0.006 (81.342)	Ji = 0.00312
+Child 6  :	(0.002, 0.006), 0.006 (73.486)	Ji = 0.00296
+Child 7  :	(0.002, 0.006), 0.006 (69.129)	Ji = 0.00308
+Segment 6  , Len = 80.00, v = -0.068 + 0.00086 j
+Child 0  :	(-0.009, 0.010), 0.014 (131.600)	Ji = 0.00703
+Child 1  :	(-0.005, 0.010), 0.011 (116.160)	Ji = 0.00589
+Child 2  :	(-0.003, 0.009), 0.010 (105.710)	Ji = 0.00493
+Child 3  :	(-0.001, 0.008), 0.008 (97.508)	Ji = 0.00415
+Child 4  :	(-0.000, 0.007), 0.007 (90.192)	Ji = 0.00355
+Child 5  :	(0.001, 0.006), 0.006 (82.964)	Ji = 0.00315
+Child 6  :	(0.001, 0.006), 0.006 (76.057)	Ji = 0.00296
+Child 7  :	(0.002, 0.006), 0.006 (72.290)	Ji = 0.00304
+Segment 7  , Len = 66.00, v = -0.045 + 0.0035 j
+Child 0  :	(-0.009, 0.011), 0.014 (131.682)	Ji = 0.00732
+Child 1  :	(-0.005, 0.011), 0.012 (116.270)	Ji = 0.00606
+Child 2  :	(-0.003, 0.009), 0.010 (105.785)	Ji =  0.005
+Child 3  :	(-0.001, 0.008), 0.008 (97.449)	Ji = 0.00415
+Child 4  :	(0.000, 0.007), 0.007 (89.798)	Ji = 0.0035
+Child 5  :	(0.001, 0.006), 0.006 (81.881)	Ji = 0.00306
+Child 6  :	(0.002, 0.005), 0.006 (73.868)	Ji = 0.00286
+Child 7  :	(0.002, 0.005), 0.006 (68.900)	Ji = 0.00296
+Segment 8  , Len = 66.00, v = -0.069 + -0.00066 j
+Child 0  :	(-0.013, 0.012), 0.018 (139.341)	Ji = 0.00911
+Child 1  :	(-0.008, 0.012), 0.014 (122.950)	Ji = 0.00719
+Child 2  :	(-0.004, 0.010), 0.011 (110.865)	Ji = 0.00559
+Child 3  :	(-0.001, 0.008), 0.008 (99.472)	Ji = 0.00429
+Child 4  :	(0.000, 0.006), 0.006 (85.590)	Ji = 0.00333
+Child 5  :	(0.002, 0.005), 0.005 (66.587)	Ji = 0.00281
+Child 6  :	(0.004, 0.004), 0.006 (46.922)	Ji = 0.00297
+Child 7  :	(0.006, 0.005), 0.007 (38.452)	Ji = 0.00382
+Segment 9  , Len = 52.00, v = -0.063 + -0.0032 j
+Child 0  :	(-0.015, 0.013), 0.020 (140.401)	Ji = 0.0103
+Child 1  :	(-0.009, 0.013), 0.015 (124.188)	Ji = 0.00785
+Child 2  :	(-0.004, 0.011), 0.011 (111.812)	Ji = 0.00586
+Child 3  :	(-0.001, 0.008), 0.008 (99.287)	Ji = 0.00429
+Child 4  :	(0.001, 0.006), 0.006 (82.252)	Ji = 0.00315
+Child 5  :	(0.003, 0.004), 0.005 (57.338)	Ji = 0.00266
+Child 6  :	(0.005, 0.003), 0.006 (34.591)	Ji = 0.00307
+Child 7  :	(0.007, 0.004), 0.008 (28.043)	Ji = 0.00424
+Segment 10 , Len = 52.00, v = -0.036 + 0.00034 j
+Child 0  :	(-0.015, 0.013), 0.020 (137.596)	Ji = 0.0101
+Child 1  :	(-0.008, 0.013), 0.015 (122.151)	Ji = 0.00766
+Child 2  :	(-0.004, 0.010), 0.011 (110.611)	Ji = 0.00573
+Child 3  :	(-0.001, 0.008), 0.008 (99.269)	Ji = 0.00422
+Child 4  :	(0.001, 0.006), 0.006 (84.172)	Ji = 0.00311
+Child 5  :	(0.002, 0.004), 0.005 (61.494)	Ji = 0.00256
+Child 6  :	(0.004, 0.003), 0.006 (38.567)	Ji = 0.00283
+Child 7  :	(0.006, 0.004), 0.008 (30.508)	Ji = 0.00387
+Segment 11 , Len = 38.00, v = -0.019 + 0.0023 j
+Child 0  :	(-0.015, 0.014), 0.021 (136.486)	Ji = 0.0105
+Child 1  :	(-0.008, 0.013), 0.015 (121.453)	Ji = 0.00785
+Child 2  :	(-0.004, 0.011), 0.011 (110.243)	Ji = 0.00577
+Child 3  :	(-0.001, 0.008), 0.008 (99.071)	Ji = 0.00416
+Child 4  :	(0.001, 0.006), 0.006 (83.633)	Ji =  0.003
+Child 5  :	(0.002, 0.004), 0.005 (59.508)	Ji = 0.00244
+Child 6  :	(0.004, 0.003), 0.005 (35.423)	Ji = 0.00275
+Child 7  :	(0.007, 0.003), 0.007 (27.682)	Ji = 0.00384
+Segment 12 , Len = 38.00, v = -0.031 + -0.00019 j
+Child 0  :	(-0.020, 0.016), 0.025 (141.784)	Ji =  0.013
+Child 1  :	(-0.011, 0.015), 0.018 (126.295)	Ji = 0.0093
+Child 2  :	(-0.005, 0.011), 0.013 (113.962)	Ji = 0.00643
+Child 3  :	(-0.001, 0.008), 0.008 (99.666)	Ji = 0.00423
+Child 4  :	(0.001, 0.005), 0.005 (74.647)	Ji = 0.00277
+Child 5  :	(0.004, 0.003), 0.005 (35.713)	Ji = 0.00258
+Child 6  :	(0.007, 0.002), 0.007 (13.348)	Ji = 0.00374
+Child 7  :	(0.011, 0.002), 0.011 (13.026)	Ji = 0.0056
+Segment 13 , Len = 24.00, v = -0.033 + -0.0027 j
+Child 0  :	(-0.018, 0.014), 0.022 (142.178)	Ji = 0.0115
+Child 1  :	(-0.009, 0.013), 0.016 (125.555)	Ji = 0.00836
+Child 2  :	(-0.004, 0.011), 0.012 (112.435)	Ji = 0.00594
+Child 3  :	(-0.001, 0.008), 0.008 (98.129)	Ji = 0.00412
+Child 4  :	(0.001, 0.006), 0.006 (76.813)	Ji = 0.00294
+Child 5  :	(0.004, 0.004), 0.005 (47.323)	Ji = 0.00267
+Child 6  :	(0.006, 0.003), 0.007 (27.012)	Ji = 0.0034
+Child 7  :	(0.008, 0.004), 0.009 (24.851)	Ji = 0.0048
+Segment 14 , Len = 60.00, v = -0.064 + 0.0032 j
+Child 0  :	(-0.005, 0.009), 0.010 (120.736)	Ji = 0.00521
+Child 1  :	(-0.003, 0.009), 0.009 (108.263)	Ji = 0.00476
+Child 2  :	(-0.002, 0.008), 0.009 (100.798)	Ji = 0.00438
+Child 3  :	(-0.001, 0.008), 0.008 (96.543)	Ji = 0.00408
+Child 4  :	(-0.001, 0.007), 0.008 (94.727)	Ji = 0.00386
+Child 5  :	(-0.001, 0.007), 0.007 (95.028)	Ji = 0.00372
+Child 6  :	(-0.001, 0.007), 0.007 (97.596)	Ji = 0.00369
+Child 7  :	(-0.002, 0.007), 0.007 (103.697)	Ji = 0.00376
+Pi Model at f=2.5 GHz:  Q = 4.398 , 4.407 , 4.437 
+L = 975.6 pH R = 3.427 
+Cs1 = 59.59 fF Rs1 = 23.46 
+Cs2 = 52.55 fF Rs2 = 23.52      Est. Resonance = 21.23 GHz
