@@ -13,7 +13,7 @@ Click [here](https://github.com/hugodiasg/asitic-example/tree/main/etc/iic-osic-
 ## Or Installing manually
 Run `install.sh`.
 
-# Example
+# Example: Square Inductor
 ## Creating the Inductor
 
 The example is an Inductor with 1 nH at 2.5 GHz.
@@ -82,6 +82,6 @@ inductor: `l0.sch` and `l0.sym`
 
 ![image](https://github.com/user-attachments/assets/974dbf90-3c63-4810-9a7a-bf0d896c014a)
 
-## LC Example
+# Example: LC Circuit
 
 Click [here](https://github.com/hugodiasg/asitic-example/tree/main/examples/sq_1nH_2.5GHz)
