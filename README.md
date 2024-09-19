@@ -105,7 +105,7 @@ file: `lc-lvs.mag`
 ## Running the LVS (Layout Vs Schematic)
 To run the LVS, the inductor isn't considered as component but the `rmetal5` layer is. So the schematic used to run the LVS just has the `C` and the `res_generic_m5`:
 
-Layout without the indutor: `lc-lvs.mag`
+Layout: `lc-lvs.mag`
 
 Schematic without the inductor: `lc-lvs.sch`
 
