@@ -1,4 +1,5 @@
 examples/sq_1nH_2.5GHz/xschem/simulation/
+examples/sq_1nH_2.5GHz/asitic/*.LOG
 
 
 examples/sq_1nH_2.5GHz/mag/*.ext

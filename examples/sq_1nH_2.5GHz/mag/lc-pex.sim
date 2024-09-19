@@ -1,9 +1,0 @@
-| units: 500000 tech: sky130A format: MIT
-x p1 p2 s=23829960,19556 l=4460 w=4460 x=29238 y=59460 sky130_fd_pr__cap_mim_m3_2
-x p1 p2 s=168608920,149392 l=4460 w=4460 x=23680 y=54600 sky130_fd_pr__cap_mim_m3_2
-x p1 p2 s=23829960,19556 l=4460 w=4460 x=23680 y=59460 sky130_fd_pr__cap_mim_m3_2
-x p1 p2 s=168608920,149392 l=4460 w=4460 x=29238 y=54600 sky130_fd_pr__cap_mim_m3_2
-C p1 p2 158.8
-C p10 20.3
-C p20 77.0
-R gnd 246
