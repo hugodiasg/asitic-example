@@ -78,6 +78,8 @@ inductor: `l0.sch` and `l0.sym`
 
 ![image](https://github.com/user-attachments/assets/ecf32bb9-c94b-4958-a85f-448e0343dec9)
 
+l0.sch
+
 ![image](https://github.com/user-attachments/assets/85ca75b1-38bd-47af-a16d-01ee68ec76c5)
 
 ![image](https://github.com/user-attachments/assets/974dbf90-3c63-4810-9a7a-bf0d896c014a)
@@ -123,6 +125,7 @@ file: `lc-pex.mag`
 The PEX was included as a `code` block in a `.sch` (with `.subckt and .ends` commented). The PEX and the inductor was placed together to compose the post layout LC.
 
 PEX: `lc-pex.sch`
+
 post layout LC: `lc-pex-full.sch`
 
 ![image](https://github.com/user-attachments/assets/981030ff-7b48-49cd-b77c-bbe524e274bd)
