@@ -1,14 +1,14 @@
 # asitic-example
 
-This repo contains the setup to install the ASITIC and [Sky130 nm PDK](https://skywater-pdk.readthedocs.io/en/main/) inductor examples.
+This repository contains the setup to install ASITIC and the [Sky130 nm PDK](https://skywater-pdk.readthedocs.io/en/main/) inductor examples (a simple inductor and a parallel LC Filter).
 
-At the moment, the ASITIC [oficial website](http://rfic.eecs.berkeley.edu/~niknejad/asitic.html) is offline but this repo uses a version provided by [Way Back Machine](https://web.archive.org/) in [this link](https://web.archive.org/web/20210411050138/http://rfic.eecs.berkeley.edu/~niknejad/asitic.html).
+Currently, the official ASITIC [website](http://rfic.eecs.berkeley.edu/~niknejad/asitic.html) is offline. However, this repository uses a version provided by the [Wayback Machine](https://web.archive.org/), accessible [here](https://web.archive.org/web/20210411050138/http://rfic.eecs.berkeley.edu/~niknejad/asitic.html).
 
 
 # Installation 
 ## Using a Docker Image
 
-Click [here](https://github.com/hugodiasg/asitic-example/tree/main/etc/iic-osic-tools) to install a version with the ASITIC of the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) Docker Image in Windows (using VNC).
+Click [here](https://github.com/hugodiasg/asitic-example/tree/main/etc/iic-osic-tools) to install a version that includes ASITIC using the [iic-osic-tools](https://github.com/iic-jku/IIC-OSIC-TOOLS) Docker image on Windows (via VNC).
 
 ## Or Installing manually
 Run `install.sh`.
@@ -16,8 +16,8 @@ Run `install.sh`.
 # Example: Square Inductor
 ## Creating the Inductor
 
-The example is an Inductor with 1 nH at 2.5 GHz.
-Run `asitic` and follow these steps bellow:
+The example is an 1 nH Inductor at 2.5 GHz.
+Run asitic and follow the steps below:
 ```/foss/designs > asitic 
 ERROR: ld.so: object '/usr/lib/x86_64-linux-gnu/libnss_wrapper.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
 ASITIC DEBUG version Grackle (Linux_Intel) (Jacob)
@@ -62,7 +62,7 @@ ASITIC>  exit
 ![image](https://github.com/user-attachments/assets/830189cb-c1c6-4682-aafa-78888860572b)
 
 ## Opening the Inductor in Magic VLSI
-Next, the `l0.cif` will be open on the Magic VLSI:
+Next, l0.cif will be opened in Magic VLSI:
 - run `magic`
 - in `tkcon`, run `cif read l0`
 - save the file to create the `l0.mag`
@@ -76,45 +76,46 @@ testbench: `tb-ind.sch`
 
 inductor: `l0.sch` and `l0.sym`
 
-![image](https://github.com/user-attachments/assets/ecf32bb9-c94b-4958-a85f-448e0343dec9)
+![image](https://github.com/user-attachments/assets/463e0e76-8920-44f2-a2f8-45c5fd4a09ad)
 
-l0.sch
-
-![image](https://github.com/user-attachments/assets/85ca75b1-38bd-47af-a16d-01ee68ec76c5)
+![image](https://github.com/user-attachments/assets/57dbf431-dc72-47b1-99ad-61e44fd180b2)
 
 ![image](https://github.com/user-attachments/assets/974dbf90-3c63-4810-9a7a-bf0d896c014a)
 
-# Example: LC Filter
+# Example: Parallel LC Filter
 
-Paralel LC filter to operate at 2.5 GHz.
+Parallel LC filter to operate at 2.5 GHz.
 
-## Creating the LC and doing the AC simulation
+## Creating the LC and performing the AC simulation
 
 file: `xschem/tb-impedance-lc.sch`
 
-![image](https://github.com/user-attachments/assets/7a7b2e08-82bc-427c-99ba-5d5d10dcbb94)
+![image](https://github.com/user-attachments/assets/da329bf5-4121-4369-a5e5-653da314b210)
+
+![image](https://github.com/user-attachments/assets/cea4f637-21e6-40cc-9eda-60f2ef4625f0)
 
 ![image](https://github.com/user-attachments/assets/68bec3b9-bb9e-4172-9736-5efa5f2bb347)
 
 ## Making the Layout of the LC
 
-Near to the `p1` port, a thin layer of `rmetal5` was placed to prevent short circuits.
+A thin layer of `rmetal5` was placed near the `p1` port to prevent short circuits.
 
 file: `lc-lvs.mag`
 
 ![image](https://github.com/user-attachments/assets/2ec82267-7887-491d-9d5f-1a731aabe32e)
 
 ## Running the LVS (Layout Vs Schematic)
-To run the LVS, the inductor isn't considered as component but the `rmetal5` layer is. So the schematic used to run the LVS just has the `C` and the `res_generic_m5`:
+
+For the LVS run, the inductor is not considered as a component, but the `rmetal5` layer is. Therefore, the schematic used for the LVS includes only the `C` and `res_generic_m5`.
 
 Layout: `lc-lvs.mag`
 
-Schematic without the inductor: `lc-lvs.sch`
+Schematic with the `res_generic_m5` replacing the inductor: `lc-lvs.sch`
 
 ![image](https://github.com/user-attachments/assets/e9696fe1-5f6d-462f-a5d0-be457acbbe39)
 
 ## Running the PEX (Parasitic Extraction)
-To run the PEX, the inductor was removed from the layout because its parasitics are already "included" in its pi model.
+For the PEX run, the inductor was removed from the layout because its parasitics are already "included" in its Pi model.
 
 file: `lc-pex.mag`
 
@@ -122,7 +123,7 @@ file: `lc-pex.mag`
 
 ## Post Layout Simulation
 
-The PEX was included as a `code` block in a `.sch` (with `.subckt and .ends` commented). The PEX and the inductor was placed together to compose the post layout LC.
+The PEX was included as a code block in a `.sch` file (with `.subckt` and `.ends` commented out). The PEX and the inductor were combined to create the post-layout LC.
 
 PEX: `lc-pex.sch`
 
